@@ -6,6 +6,16 @@
 
 ## 使用
 
+项目中增加如下的repository:
+
+```
+<repository>
+    <id>minio-spring-boot</id>
+    <url>https://mvn.hgfdodo.win</url>
+</repository>
+```
+
+
 项目中引入如下依赖：
 
 ```xml
@@ -14,12 +24,7 @@
     <artifactId>minio-spring-boot-starter</artifactId>
     <version>1.0</version>
 </dependency>
-<repository>
-    <id>minio-spring-boot</id>
-    <url>https://github.com/gfhe/minio-spring-boot/repo/</url>
-</repository>
 ```
-
 
 配置文件中增加配置：
 ```yaml
