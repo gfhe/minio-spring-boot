@@ -14,6 +14,10 @@
     <artifactId>minio-spring-boot-starter</artifactId>
     <version>1.0</version>
 </dependency>
+<repository>
+    <id>minio-spring-boot</id>
+    <url>https://github.com/gfhe/minio-spring-boot/repo/</url>
+</repository>
 ```
 
 
