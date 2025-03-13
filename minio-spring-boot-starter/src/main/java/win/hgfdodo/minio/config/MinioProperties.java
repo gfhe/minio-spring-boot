@@ -23,7 +23,7 @@ public class MinioProperties {
     private String secretKey;
 
     /**
-     * Not Required, minio server region info， used with cloud minio
+     * Not Required, minio server region info, used with cloud minio
      */
     private String region;
 

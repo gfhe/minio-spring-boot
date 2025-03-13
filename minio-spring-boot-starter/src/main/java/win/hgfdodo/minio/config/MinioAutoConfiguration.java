@@ -18,6 +18,7 @@ import win.hgfdodo.minio.service.MinioTemplate;
  */
 @EnableConfigurationProperties(MinioProperties.class)
 @Configuration
+@ConditionalOnClass(MinioProperties.class)
 public class MinioAutoConfiguration {
     @Autowired
     MinioProperties minioProperties;
@@ -31,7 +32,7 @@ public class MinioAutoConfiguration {
     @ConditionalOnClass(MinioClient.class)
     public MinioConnectionFactory minioConnectionFactory() {
         MinioClient.Builder builder = MinioClient.builder();
-        if (!StringUtils.isEmpty(minioProperties.getRegion())) {
+        if (StringUtils.hasText(minioProperties.getRegion())) {
             builder.region(minioProperties.getRegion());
         }
         builder
